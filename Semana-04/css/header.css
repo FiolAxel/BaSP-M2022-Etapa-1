@@ -29,7 +29,7 @@ nav h2 {
     margin-top: 10px;
 }
 
-.button-title-and-networks h1 {
+.header-nav h1 {
     color: #373867;
     font-size: 40px;
     font-weight: 700;
@@ -39,11 +39,18 @@ nav h2 {
     padding-bottom: 4px;
 }
 
+.title-bar-and-subheader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .button-menu {
     font-size: 37px;
     margin: 12px 0px 12px 6px;
     color: #373867;
     position: absolute;
+    top: 0px;
 }
 
 .networks {
@@ -54,4 +61,10 @@ nav h2 {
     border-bottom: 1px solid #000;
     width: 240px;
     margin: 7px auto;
+}
+
+.logo-image img{
+    display: none;
+    width: 123px;
+    height: 123px;
 }

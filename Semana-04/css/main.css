@@ -1,10 +1,9 @@
-body {
-    font-family: "Roboto";
-    margin-top: 90px;
-}
-
 .desktop {
     display: none;
+}
+
+.whole-section{
+    margin-top: 105px;
 }
 
 .introdutory-article{
@@ -121,6 +120,9 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .functionalities-div, .reasons-div {
@@ -128,7 +130,6 @@ body {
     text-align: start;
     align-items: center;
     padding-bottom: 55px;
-    flex-basis: 600px;
 }
 
 .functionalities-section h2, .reasons-section h2 {
@@ -171,9 +172,9 @@ body {
 }
 
 .inf-section {
-    text-align: start;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .inf-list {
@@ -183,18 +184,25 @@ body {
 .inf-list h4 {
     align-self: start;
     font-size: 24px;
-    font-weight: bold;
     margin-bottom: 10px;
     border-bottom: 2px solid #000;
     padding-bottom: 10px;
+    color: #373867;
+    font-weight: 700;
+    text-transform: capitalize;
 }
 
 ol {
     margin-top: 15px;
     margin-bottom: 50px;
+    text-transform: capitalize;
 }
 
 ol li {
     font-size: 12px;
     margin-bottom: 25px;
+}
+
+ol li a {
+    text-decoration: none;
 }

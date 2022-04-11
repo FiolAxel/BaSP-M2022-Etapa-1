@@ -3,6 +3,8 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+    background-color: #EDEDED;
+    padding-top: 20px;
 }
 
 footer i {

@@ -1,0 +1,47 @@
+
+@media screen and (min-width: 768px){
+    .sidebar{
+        display: block;
+    }
+
+    .content{
+        margin-left: 25%;
+    }
+
+    .button-menu{
+        display: none;
+    }
+
+    .header-nav h1{
+        align-self: flex-end;
+    }
+
+    .logo-image {
+        margin: 34px 0px 42px 68px;
+    }
+
+    .logo-image img{
+        display: block;
+    }
+
+    .title-bar-and-subheader{
+        width: 60%;
+    }
+
+    .button-title-and-networks{
+        max-width: 123px;
+    }
+
+    nav{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .whole-section{
+        margin-top: 219px;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+}
