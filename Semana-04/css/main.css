@@ -1,0 +1,200 @@
+body {
+    font-family: "Roboto";
+    margin-top: 90px;
+}
+
+.desktop {
+    display: none;
+}
+
+.introdutory-article{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 26px 37px 13px 37px;
+}
+
+.image-1 {
+    width: 354px;
+    height: 316px;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.greeting-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #373867;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 13px;
+    padding-bottom: 18px;
+}
+
+.section-content h3 {
+    color: #373867;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 8px;
+    padding-bottom: 13px;
+}
+
+.text-important {
+    text-align: justify;
+    color: #373867;
+    font-size: 13px;
+    font-weight: 400;
+    padding-bottom: 36px;
+}
+
+.learn-more-btn {
+    border-radius: 5px;
+    background: #AACE9B;
+    padding: 14px 36px;
+    text-decoration: none;
+    color: #373867;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.history-article {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 61px 0 105px;
+}
+
+.history-article h2 {
+    display: none;
+}
+
+.history-article h3 {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "BioRhyme";
+    color: #000;
+    padding-bottom: 22px;
+}
+
+.history-article img {
+    width: 262px;
+    height: 178px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.history-article p {
+    font-size: 10px;
+    text-align: left;
+    font-family: "BioRhyme";
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.23);
+    line-height: 15px;
+    margin-bottom: 15px;
+}
+
+.image-3 {
+    margin-top: 25px !important ;
+}
+
+.btn-pink {
+    border-radius: 4px;
+    background: #F11A41;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    color: #FFF;
+    padding: 10px 46px 15px 46px;
+}
+
+.functionalities-section article, .reasons-section article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.functionalities-div, .reasons-div {
+    display: flex;
+    text-align: start;
+    align-items: center;
+    padding-bottom: 55px;
+    flex-basis: 600px;
+}
+
+.functionalities-section h2, .reasons-section h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, .20);
+    color: #373867;
+    text-transform: capitalize;
+}
+
+.reasons-section h2 {
+    margin-top: 0;
+}
+
+.functionalities-div img, .reasons-div img {
+    width: 102px;
+    min-width: 80px
+}
+
+.functionalities-text h3, .reasons-text h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #373867;
+    text-transform: capitalize;
+}
+
+.functionalities-div p, .reasons-div p {
+    font-size: 12px;
+    color: #373867;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.functionalities-text, .reasons-text {
+    width: 255px;
+    margin-left: 20px;
+}
+
+.inf-section {
+    text-align: start;
+    align-items: center;
+    justify-content: center;
+}
+
+.inf-list {
+    width: 33%;
+}
+
+.inf-list h4 {
+    align-self: start;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+ol {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+ol li {
+    font-size: 12px;
+    margin-bottom: 25px;
+}

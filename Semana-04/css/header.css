@@ -1,0 +1,57 @@
+header {
+    background-color: #EDEDED;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 20px;
+    padding: 5px 0px;
+    margin-right: 110px;
+    text-transform: capitalize;
+    color: #373867;
+    font-weight: 400;
+}
+
+.button-title-and-networks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.button-title-and-networks h1 {
+    color: #373867;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    text-transform: capitalize;
+    padding-bottom: 4px;
+}
+
+.button-menu {
+    font-size: 37px;
+    margin: 12px 0px 12px 6px;
+    color: #373867;
+    position: absolute;
+}
+
+.networks {
+    display: none;
+}
+
+.border-header {
+    border-bottom: 1px solid #000;
+    width: 240px;
+    margin: 7px auto;
+}
