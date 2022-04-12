@@ -10,6 +10,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100vw;
 }
 
 nav h2 {
@@ -55,6 +56,7 @@ nav h2 {
 
 .networks {
     display: none;
+    
 }
 
 .border-header {
@@ -67,4 +69,11 @@ nav h2 {
     display: none;
     width: 123px;
     height: 123px;
+}
+
+.border-line-header {
+    border-bottom: 4px solid;
+    color: #373867;
+    width: 100%;
+    display: none;
 }

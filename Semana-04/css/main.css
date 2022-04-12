@@ -6,7 +6,7 @@
     margin-top: 105px;
 }
 
-.introdutory-article{
+.introductory-article{
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -178,7 +178,7 @@
 }
 
 .inf-list {
-    width: 33%;
+    width: 55%;
 }
 
 .inf-list h4 {
@@ -190,12 +190,14 @@
     color: #373867;
     font-weight: 700;
     text-transform: capitalize;
+    padding-left: 30px;
 }
 
 ol {
     margin-top: 15px;
     margin-bottom: 50px;
     text-transform: capitalize;
+    padding-left: 30px;
 }
 
 ol li {
