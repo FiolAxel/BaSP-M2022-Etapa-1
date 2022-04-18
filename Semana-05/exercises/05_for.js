@@ -2,7 +2,7 @@ console.log('Crear un array que contenga 5 palabras y recorrer dicho array utili
 
 var names = [`axel`, `roman`, `lourdes`, `bruno`, `jose`];
 for(i= 0; i < names.length; i++){
-    // alert(names[i]);
+    alert(names[i]);
 }
 
 console.log('Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una alerta por cada palabra modificada.');
