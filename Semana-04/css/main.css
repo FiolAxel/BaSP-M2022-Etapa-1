@@ -67,7 +67,6 @@
 .history-article {
     display: flex;
     flex-direction: column;
-    margin: 0px 61px 0 105px;
 }
 
 .history-article h2 {
