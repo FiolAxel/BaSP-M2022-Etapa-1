@@ -143,3 +143,39 @@ input[type="submit"] {
     justify-content: start;
     margin-bottom: 30px;
 }
+
+@media screen and (min-width: 768px){
+    .btn-form {
+        display: none;
+    }
+
+    .checkbox-form {
+        display: flex;
+        font-size: 10px;
+        margin-bottom: 10px;
+        flex-direction: row;
+    }
+
+    .btn-tablet, .btn-tablet-2 {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .border-form {
+        display: none;
+    }
+
+    .form-section h2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 5px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .container-btn {
+        display: none;
+    }
+}

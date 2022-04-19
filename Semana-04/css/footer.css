@@ -24,3 +24,9 @@ footer p {
     border: 1px solid #000;
     background-color: #000;
 }
+
+@media screen and (min-width: 1024px){
+    footer {
+        background-color: transparent;
+    }
+}

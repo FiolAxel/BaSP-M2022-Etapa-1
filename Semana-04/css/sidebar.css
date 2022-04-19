@@ -55,3 +55,13 @@ aside p {
     background-color: #000;
     margin: 34px auto;
 }
+
+@media screen and (min-width: 768px){
+    .sidebar {
+        display: block;
+    }
+
+    .button-menu {
+        display: none;
+    }
+}

@@ -77,3 +77,61 @@ nav h2 {
     width: 100%;
     display: none;
 }
+
+@media screen and (min-width: 768px){
+    .header-nav h1 {
+        align-self: flex-end;
+    }
+
+    .logo-image {
+        margin: 34px 0px 42px 68px;
+    }
+
+    .logo-image img{
+        display: block;
+    }
+
+    .title-bar-and-subheader{
+        width: 60%;
+    }
+
+    .button-title-and-networks{
+        max-width: 123px;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .logo-image, .title-bar-and-subheader {
+        display: none;
+    }
+    
+    .networks {
+        display: block;
+        margin-left: auto;
+        margin-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    header {
+        position: relative;
+        background-color: transparent;
+    }
+
+    .networks a {
+        padding: 10px;
+    }
+    
+    .border-line-header {
+        display: block;
+
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
