@@ -14,6 +14,12 @@ Complete JavaScript exercises divided into six modules (variables and operators,
 
 The second page is https://fiolaxel.github.io/BaSP-M2022-Etapa-1/Semana-05/
 
+# Week 06 - JAVASCRIPT DOM
+
+This week's work consists in the recreation of the employee login using html, css and JavaScript DOM.
+
+The page is located at https://fiolaxel.github.io/BaSP-M2022-Etapa-1/Semana-06/
+
 ```
 Made by Axel Fiol
 ```
