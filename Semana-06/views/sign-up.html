@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/d0631d71b8.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/sidebar.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/sign-up.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/whole-page.css">
+        <link rel="stylesheet" href="../styles/sign-up.css">
+        <title>Sign Up | Trackgenix SA</title>
+    </head>
+    <body>
+        <aside>
+            <div class="menu-icon-aside">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </div>
+            <p>Menu</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sign-up.html" target="_blank">SignUp</a></li>
+                <li><a href="login.html" target="_blank">LogIn</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="aside-bar"></div>
+            <p>Get in touch</p>
+            <ul>
+                <li><a href="#">Worked hours</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Management</a></li>
+                <li><a href="#">Roles</a></li>
+            </ul>
+            <div class="aside-bar"></div>
+            <p class="aside-h">Trackgenix</p>
+            <p class="aside-p">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+        </aside>
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
+                <div class="logo-image">
+                    <img src="../assets/logo.png" alt="">
+                </div>
+                <div class="logo">
+                    <h1>Trackgenix</h1>
+                    <div class="logo-bar"></div>
+                    <h2>Subheader</h2>
+                </div>
+                <div class="social-networks">
+                    <a href="https://es-la.facebook.com/" target="blank_"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="blank_"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://ar.linkedin.com/" target="blank_"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/" target="blank_"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/" target="blank_"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </nav>
+            <div class="dividing-bar"></div>
+        </header>
+        <div class="signup-form-container">
+            <div class="signup-form-box">
+                <h2>Sign Up</h2>
+                <form>
+                    <div class="signup-name-input">
+                        <input type="text" name="name" placeholder="Name">
+                        <p class="signup-error">
+                            must contain 3 letters or more
+                        </p>
+                        <input type="text" name="lastname" placeholder="Last name">
+                        <p class="signup-error">
+                            must contain 3 letters or more
+                        </p>
+                    </div>
+                    <input type="number" name="dni" placeholder="DNI">
+                    <p class="signup-error">
+                        must containt 7 numbers or more
+                    </p>
+                    <input type="date" name="date-of-birth" placeholder="Date of Birth">
+                    <input type="number" name="tel" placeholder="Phone number">
+                    <p class="signup-error">
+                        must contain 10 numbers or more
+                    </p>
+                    <div class="signup-adress-input">
+                        <input type="text" name="adress" placeholder="Adress">
+                        <p class="signup-error">
+                            must containt 5 caracters or more
+                        </p>
+                        <input type="text" name="location" placeholder="City">
+                        <p class="signup-error">
+                            must contain 3 letters or more
+                        </p>
+                    </div>
+                    <input type="number" name="postal-code" placeholder="Postal code">
+                    <p class="signup-error">
+                        must contain 3 to 4 numbers
+                    </p>
+                    <input type="email" name="email" placeholder="Email">
+                    <p class="signup-error">
+                        enter a valid email format
+                    </p>
+                    <div class="signup-password-input">
+                        <input type="password" name="password" placeholder="Password">
+                        <p class="signup-error">
+                            must contain 8 caracters or more, formed by numbers and letters
+                        </p>
+                        <input type="password" name="repeat-password" placeholder="Repeat password">
+                        <p class="signup-error">
+                            passwords don't match
+                        </p>
+                    </div>
+                    <input type="submit" value="Continue">
+                </form>
+            </div>
+        </div>
+        <script src="../javascript/sign-up.js"></script>
+    </body>
+</html>

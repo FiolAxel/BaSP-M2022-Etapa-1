@@ -1,0 +1,137 @@
+header {
+    background-color: #EDEDED;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+}
+
+nav h2 {
+    font-size: 20px;
+    padding: 5px 0px;
+    margin-right: 110px;
+    text-transform: capitalize;
+    color: #373867;
+    font-weight: 400;
+}
+
+.button-title-and-networks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.header-nav h1 {
+    color: #373867;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    text-transform: capitalize;
+    padding-bottom: 4px;
+}
+
+.title-bar-and-subheader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-menu {
+    font-size: 37px;
+    margin: 12px 0px 12px 6px;
+    color: #373867;
+    position: absolute;
+    top: 0px;
+}
+
+.networks {
+    display: none;
+    
+}
+
+.border-header {
+    border-bottom: 1px solid #000;
+    width: 240px;
+    margin: 7px auto;
+}
+
+.logo-image img{
+    display: none;
+    width: 123px;
+    height: 123px;
+}
+
+.border-line-header {
+    border-bottom: 4px solid;
+    color: #373867;
+    width: 100%;
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .header-nav h1 {
+        align-self: flex-end;
+    }
+
+    .logo-image {
+        margin: 34px 0px 42px 68px;
+    }
+
+    .logo-image img{
+        display: block;
+    }
+
+    .title-bar-and-subheader{
+        width: 60%;
+    }
+
+    .button-title-and-networks{
+        max-width: 123px;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .logo-image, .title-bar-and-subheader {
+        display: none;
+    }
+    
+    .networks {
+        display: block;
+        margin-left: auto;
+        margin-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    header {
+        position: relative;
+        background-color: transparent;
+    }
+
+    .networks a {
+        padding: 10px;
+    }
+    
+    .border-line-header {
+        display: block;
+
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
