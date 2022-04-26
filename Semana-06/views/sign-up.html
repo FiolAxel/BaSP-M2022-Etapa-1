@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -12,7 +13,6 @@
         <link rel="stylesheet" href="../styles/header.css">
         <link rel="stylesheet" href="../styles/sidebar.css">
         <link rel="stylesheet" href="../styles/footer.css">
-        <link rel="stylesheet" href="../styles/sign-up.css">
         <link rel="stylesheet" href="../styles/main.css">
         <link rel="stylesheet" href="../styles/whole-page.css">
         <link rel="stylesheet" href="../styles/sign-up.css">
@@ -25,10 +25,10 @@
             </div>
             <p>Menu</p>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sign-up.html" target="_blank">SignUp</a></li>
-                <li><a href="login.html" target="_blank">LogIn</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="ul-link1" href="index.html">Home</a></li>
+                <li><a class="ul-link2" href="sign-up.html">SignUp</a></li>
+                <li><a class="ul-link3" href="login.html">LogIn</a></li>
+                <li><a class="ul-link4" href="#">Contact</a></li>
             </ul>
             <div class="aside-bar"></div>
             <p>Get in touch</p>
@@ -68,59 +68,76 @@
             </nav>
             <div class="dividing-bar"></div>
         </header>
-        <div class="signup-form-container">
-            <div class="signup-form-box">
-                <h2>Sign Up</h2>
-                <form>
-                    <div class="signup-name-input">
-                        <input type="text" name="name" placeholder="Name">
-                        <p class="signup-error">
-                            must contain 3 letters or more
-                        </p>
-                        <input type="text" name="lastname" placeholder="Last name">
-                        <p class="signup-error">
-                            must contain 3 letters or more
-                        </p>
-                    </div>
-                    <input type="number" name="dni" placeholder="DNI">
-                    <p class="signup-error">
-                        must containt 7 numbers or more
-                    </p>
-                    <input type="date" name="date-of-birth" placeholder="Date of Birth">
-                    <input type="number" name="tel" placeholder="Phone number">
-                    <p class="signup-error">
-                        must contain 10 numbers or more
-                    </p>
-                    <div class="signup-adress-input">
-                        <input type="text" name="adress" placeholder="Adress">
-                        <p class="signup-error">
-                            must containt 5 caracters or more
-                        </p>
-                        <input type="text" name="location" placeholder="City">
-                        <p class="signup-error">
-                            must contain 3 letters or more
-                        </p>
-                    </div>
-                    <input type="number" name="postal-code" placeholder="Postal code">
-                    <p class="signup-error">
-                        must contain 3 to 4 numbers
-                    </p>
-                    <input type="email" name="email" placeholder="Email">
-                    <p class="signup-error">
-                        enter a valid email format
-                    </p>
-                    <div class="signup-password-input">
-                        <input type="password" name="password" placeholder="Password">
-                        <p class="signup-error">
-                            must contain 8 caracters or more, formed by numbers and letters
-                        </p>
-                        <input type="password" name="repeat-password" placeholder="Repeat password">
-                        <p class="signup-error">
-                            passwords don't match
-                        </p>
-                    </div>
-                    <input type="submit" value="Continue">
-                </form>
+        <div class="signup-container">
+            <div class="signup-form-container">
+                <div class="signup-form-box">
+                    <form>
+                        <h2>Sign Up</h2>
+                        <div class="form-inputs">
+                            <div>
+                                <input type="text" name="signup-name" placeholder="Name">
+                                <p class="signup-error"></p>
+                            </div>
+                            <div>
+                                <input type="text" name="lastname" placeholder="Last name">
+                                <p class="signup-error"></p>
+                            </div>
+                            <div>
+                                <input type="number" name="dni" placeholder="DNI">
+                                <p class="signup-error"></p>
+                            </div>
+                            <div>
+                                <input type="date" name="date-of-birth">
+                                <p class="signup-error"></p>
+                            </div>
+                            <div>
+                                <input type="number" name="tel" placeholder="Phone number">
+                                <p class="signup-error"></p>
+                            </div>
+                            <div>
+                                <input type="text" name="address" placeholder="Address">
+                                <p class="signup-error"></p>
+                            </div>
+                            <div>
+                                <input type="text" name="location" placeholder="City">
+                                <p class="signup-error"></p>
+                            </div>
+                            <div>
+                                <input type="number" name="postal-code" placeholder="Postal code">
+                                <p class="signup-error"></p>
+                            </div>
+                            <div>
+                                <input type="email" name="signup-email" placeholder="Email">
+                                <p class="signup-error"></p>
+                            </div>
+                            <div>
+                                <input type="password" name="password" placeholder="Password">
+                                <p class="signup-error"></p>
+                            </div>
+                            <div>
+                                <input type="password" name="repeat-password" placeholder="Repeat password">
+                                <p class="signup-error"></p>
+                            </div>
+                        </div>
+                        <input type="submit" value="Create">
+                    </form>
+                </div>
+            </div>
+            <div class="signup-validation-container">
+                <div id="signup-validation">
+                    <h3>Sign up result</h3>
+                    <p class="signup-validation-result"></p>
+                    <p class="signup-validation-result"></p>
+                    <p class="signup-validation-result"></p>
+                    <p class="signup-validation-result"></p>
+                    <p class="signup-validation-result"></p>
+                    <p class="signup-validation-result"></p>
+                    <p class="signup-validation-result"></p>
+                    <p class="signup-validation-result"></p>
+                    <p class="signup-validation-result"></p>
+                    <p class="signup-validation-result"></p>
+                    <p class="signup-validation-result"></p>
+                </div>
             </div>
         </div>
         <script src="../javascript/sign-up.js"></script>

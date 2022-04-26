@@ -29,7 +29,6 @@ function validatePassword(password) {
             }
         }
         if(!charIsLetter(password[i]) && isNaN(password[i])){
-            // si no es una letra y no es numero entonces es un simbolo. Error en el pw.
             return false;
         }
     }
@@ -39,8 +38,7 @@ function validatePassword(password) {
 }
 
 inputEmail.addEventListener('blur', function(){
-    // aca validar el email
-    console.log('blur del email (pierde focus)');
+    // validate email
     valorEmail = document.getElementById('email').value;
 
     if (validateEmail(valorEmail) === null){
@@ -63,9 +61,8 @@ inputEmail.addEventListener('focus', function(){
 });
 
 inputPassword.addEventListener('blur', function(){
-    // aca validas el password
+    // validate password
 
-    console.log('blur del password (pierde focus)');
     valorPassword = document.getElementById('password').value;
 
     if (!validatePassword(valorPassword)){
@@ -88,6 +85,5 @@ inputPassword.addEventListener('focus', function(){
 
 
 boton.addEventListener('click', function(){
-    console.log('click en el boton del login');
 });
 
