@@ -1,13 +1,12 @@
-body{
+body {
     font-family: 'Roboto';
 }
 
-.login-page{
-    margin-top: 30px;
+.login-page {
+    margin-top: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
 }
 
 .login-form-container {
@@ -33,7 +32,7 @@ body{
     background-color: #EBEBF0;
 }
 
-.login-form{
+.login-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,7 +40,7 @@ body{
     box-shadow: 0px 4px 15px 4px rgba(0, 0, 0, 0.25);
 }
 
-#continue-button{
+#continue-button {
     padding: 14px 131px;
     margin: 42px 45px 32px;
     background: #F56A6A;
@@ -50,23 +49,28 @@ body{
     color: #fff;
     border-radius: 4px;
     font-weight: 700;
+    cursor: pointer;
 }
 
-#email-error-msg{
+#continue-button:hover {
+    opacity: 80%;
+}
+
+#email-error-msg {
     display: none;
     color: red;
     margin: 0 auto 0 58px;
     font-size: 15px;
 }
 
-#password-error-msg{
+#password-error-msg {
     display: none;
     color: red;
     margin: 0 auto 0 58px;
     font-size: 15px;
 }
 
-.login-form h2{
+.login-form h2 {
     margin: 66px 162px 63px;
     font-weight: 600;
     font-size: 30px;
@@ -74,18 +78,23 @@ body{
     white-space: nowrap;
 }
 
-.login-form a{
+.home {
+    font-size: 20px;
+}
+
+.login-form a {
     margin-left: auto;
     margin-right: 55px;
     font-size: 13px;
     margin-top: 37px;
 }
 
-.login-form a:hover{
+
+.login-form a:hover {
     text-decoration: underline;
 }
 
-.login-remember-me{
+.login-remember-me {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -93,12 +102,12 @@ body{
     margin-left: 58px;
 }
 
-.login-remember-me p{
+.login-remember-me p {
     white-space: nowrap;
     font-size: 13px;
 }
 
-.input-login{
+.input-login {
     padding: 10px 12px;
     width: 73%;
     margin: 20px auto 20px 58px;
@@ -113,6 +122,21 @@ body{
     display: none;
 }
 
+#login-validation {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EBEBF0;
+    font-size: 15px;
+    line-height: 25px;
+    /* text-align: center; */
+    /* margin: 0%; */
+    margin: 50px 35%;
+    box-shadow: 0px 4px 15px 4px rgb(0 0 0 / 25%);
+    padding-bottom: 0%;
+}
+
 @media screen and (min-width: 768px) {
     .login-form-container {
         top: 200px;
@@ -120,14 +144,14 @@ body{
         margin-left: 25%;
     }
 
-    .login-page{
-        margin-top: 150px;
+    .login-page {
+        margin-top: 300px;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .login-page{
-        margin-top: 0px;
+    .login-page {
+        margin-top: 45px;
     }
 
     .dividing-bar {

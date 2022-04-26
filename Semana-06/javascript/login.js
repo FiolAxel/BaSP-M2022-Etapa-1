@@ -1,6 +1,7 @@
 var boton = document.getElementById('continue-button');
 var inputEmail = document.getElementById('email');
 var inputPassword = document.getElementById('password');
+var validationResultsLogin = document.getElementsByClassName('login-validation-result');
 
 function charIsLetter(char) {
     if (typeof char !== 'string') {
@@ -83,7 +84,27 @@ inputPassword.addEventListener('focus', function(){
     inputPassword.style.border = '1px solid black';
 });
 
+validationBoxS = document.getElementById('login-validation');
 
 boton.addEventListener('click', function(){
+    valorEmail = document.getElementById('email').value;
+    valorPassword = document.getElementById('password').value;
+    validationBoxS.style.display = 'flex';
+    validationBoxS.scrollIntoView(true);
+    if (!validateEmail(valorEmail)) {
+        validationResultsLogin[0].textContent = 'Invalid email';
+        validationResultsLogin[0].style.color = 'red';
+    }
+    else {
+        validationResultsLogin[0].textContent = `Email: ${valorEmail}`;
+        validationResultsLogin[0].style.color = 'green';
+    }
+    if (!validatePassword(valorPassword)) {
+        validationResultsLogin[1].textContent = 'Invalid password';
+        validationResultsLogin[1].style.color = 'red';
+    }
+    else {
+        validationResultsLogin[1].textContent = `Password: ${valorPassword}`;
+        validationResultsLogin[1].style.color = 'green';
+    }
 });
-
