@@ -18,7 +18,7 @@ The second page is https://fiolaxel.github.io/BaSP-M2022-Etapa-1/Semana-05/
 
 This week's work consists in the recreation of the employee login using html, css and JavaScript DOM.
 
-The page is located at https://fiolaxel.github.io/BaSP-M2022-Etapa-1/Semana-06/
+The page is located at https://fiolaxel.github.io/BaSP-M2022-Etapa-1/Semana-06/views/
 
 ```
 Made by Axel Fiol
