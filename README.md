@@ -20,6 +20,12 @@ This week's work consists in the recreation of the employee login using html, cs
 
 The page is located at https://fiolaxel.github.io/BaSP-M2022-Etapa-1/Semana-06/views/
 
+# Week 07 - JAVASCRIPT HTTP
+
+This week we will work on extending the forms from the previous week so that pressing the confirmation buttons sends the data loaded in them to a web server via an HTTP request from JavaScript.
+
+The page is located at https://fiolaxel.github.io/BaSP-M2022-Etapa-1/Semana-07/index.html/
+
 ```
 Made by Axel Fiol
 ```
