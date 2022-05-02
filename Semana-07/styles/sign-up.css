@@ -1,0 +1,141 @@
+form h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 150px;
+}
+
+.signup-form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.signup-form-box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    max-width: 350px;
+    min-width: 200px;
+    padding: 30px;
+    background-color: #EBEBF0;
+    box-shadow: 0px 4px 15px 4px rgba(0, 0, 0, 0.25);
+}
+
+.signup-form-box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    height: 80%;
+}
+
+input {
+    width: 70%;
+    margin: 10px 0;
+}
+
+input[type="submit"] {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.ul-link2 {
+    font-weight: bold;
+}
+
+.signup-validation-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+#signup-validation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 50%;
+    max-width: 350px;
+    min-width: 200px;
+    padding: 30px;
+    background-color: #EBEBF0;
+    box-shadow: 0px 4px 15px 4px rgba(0, 0, 0, 0.25);
+}
+
+#signup-validation h3 {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.signup-validation-result {
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.signup-error {
+    font-size: 13px;
+}
+
+.home {
+    text-align: end;
+}
+
+@media screen and (min-width: 768px) {
+    .signup-container {
+        top: 250px;
+    }
+
+    .signup-form-box {
+        width: 80%;
+        max-width: 1200px;
+    }
+
+    .form-inputs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .form-inputs input {
+        width: 80%;
+        margin: 10px;
+    }
+
+    #signup-validation {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        max-width: 1200px;
+    }
+
+    .form-inputs div {
+        width: 50%;
+    }
+
+    .signup-validation-result {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .dividing-bar {
+        display: inherit;
+    }
+    
+    .signup-container {
+        top: 150px;
+    }
+}

@@ -1,0 +1,64 @@
+body {
+    color: #373867;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #373867;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+ol {
+    list-style: auto;
+}
+
+@media screen and (min-width: 768px){
+    .content {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .content {
+        padding: 0px 20px;
+    }
+
+    .whole-section {
+        margin-top: 30px;
+    }
+
+    .border-end {
+        display: flex;
+        border-bottom: 3px solid #373867;
+        width: 90%;
+        margin-left: 65px;
+    }
+
+    .pages-web {
+        margin-top: 55px;
+        margin-bottom: 40px;
+        margin-left: 28%;
+    }
+    
+    .pages-web a {
+        padding: 20px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #373867;
+        font-size: 14px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+    .btn-pages-web {
+        border: 2px solid #373867;
+    }
+}

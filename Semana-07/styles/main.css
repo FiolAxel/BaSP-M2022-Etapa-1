@@ -1,0 +1,335 @@
+.desktop {
+    display: none;
+}
+
+.whole-section{
+    margin-top: 105px;
+}
+
+.introductory-article{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 26px 37px 13px 37px;
+}
+
+.image-1 {
+    width: 354px;
+    height: 316px;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.greeting-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #373867;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 13px;
+    padding-bottom: 18px;
+}
+
+.section-content h3 {
+    color: #373867;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 8px;
+    padding-bottom: 13px;
+}
+
+.text-important {
+    text-align: justify;
+    color: #373867;
+    font-size: 13px;
+    font-weight: 400;
+    padding-bottom: 36px;
+}
+
+.learn-more-btn {
+    border-radius: 5px;
+    background: #AACE9B;
+    padding: 14px 36px;
+    text-decoration: none;
+    color: #373867;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.history-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.history-article h2 {
+    display: none;
+}
+
+.history-article h3 {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "BioRhyme";
+    color: #000;
+    padding-bottom: 22px;
+}
+
+.history-article img {
+    width: 262px;
+    height: 178px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.history-article p {
+    font-size: 10px;
+    text-align: left;
+    font-family: "BioRhyme";
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.23);
+    line-height: 15px;
+    margin-bottom: 15px;
+}
+
+.image-3 {
+    margin-top: 25px;
+}
+
+.btn-pink {
+    border-radius: 4px;
+    background: #F11A41;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    color: #FFF;
+    padding: 10px 46px 15px 46px;
+}
+
+.functionalities-section article, .reasons-section article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.functionalities-div, .reasons-div {
+    display: flex;
+    text-align: start;
+    align-items: center;
+    padding-bottom: 55px;
+}
+
+.functionalities-section h2, .reasons-section h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, .20);
+    color: #373867;
+    text-transform: capitalize;
+}
+
+.reasons-section h2 {
+    margin-top: 0;
+}
+
+.functionalities-div img, .reasons-div img {
+    width: 102px;
+    min-width: 80px
+}
+
+.functionalities-text h3, .reasons-text h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #373867;
+    text-transform: capitalize;
+}
+
+.functionalities-div p, .reasons-div p {
+    font-size: 12px;
+    color: #373867;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.functionalities-text, .reasons-text {
+    width: 255px;
+    margin-left: 20px;
+}
+
+.inf-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inf-list {
+    width: 55%;
+}
+
+.inf-list h4 {
+    align-self: start;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    color: #373867;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-left: 30px;
+}
+
+ol {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    padding-left: 30px;
+}
+
+ol li {
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+ol li a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px){
+    .whole-section {
+        margin-top: 219px;
+    }
+
+    .btn-pink {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .introductory-article {
+        gap: 35px;
+        padding: 0px;
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+
+    .greeting-title {
+        font-size: 54px;
+        font-weight: 700;
+        color: #373867;
+        text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+        padding-top: 13px;
+        padding-bottom: 18px;
+    }
+
+    .section-content h3 {
+        color: #373867;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+        padding-top: 8px;
+        padding-bottom: 13px;
+    }
+
+    .text-important {
+        text-align: justify;
+        color: #373867;
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 36px;
+    }
+
+    .image-1 {
+        width: 500px;
+        height: 500px;
+    }
+
+    .learn-more-btn {
+        border-radius: 5px;
+        background: #fff;
+        padding: 14px 36px;
+        text-decoration: none;
+        color: #373867;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 500;
+        border: 2px solid #373867;
+        margin-right: auto;
+    }
+
+    .history-mobile-p {
+        display: none;
+    }
+
+    .history-article h3 {
+        display: none;
+    }
+
+    .history-article h2 {
+        color: #373867;
+        font-size: 60px;
+        font-weight: 700;
+        font-family: 'Roboto';
+        margin-bottom: 25px;
+    }
+
+    .history-article img {
+        margin: 0px !important;
+        width: 50%;
+        height: 50%;
+        border-radius: 4px;
+    }
+
+    .history-article p {
+        margin: 0px;
+        font-size: 15px;
+        color: #373867;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: justify;
+    }
+
+    .desktop {
+        display: block !important;
+    }
+
+    .desktop-image-and-p{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .desktop-row{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .inf-section {
+        flex-direction: row;
+        margin-top: 25px;
+        margin-left: 50px;
+    }
+
+    .inf-list ol {
+        padding-left: 50px;
+    }
+
+    .inf-list h4 {
+        border: 0;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/d0631d71b8.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/sidebar.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/login.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/whole-page.css">
+        <title>LogIn | Trackgenix SA</title>
+    </head>
+    <body>
+        <header>
+            <nav class="header-nav">
+                <div class="button-title-and-networks">
+                    <div class="button-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="logo-image">
+                        <img src="../assets/image8.png" alt="image google">
+                    </div>
+                </div>
+                <div class="title-bar-and-subheader">
+                    <h1>
+                        trackgenix
+                    </h1>
+                    <div class="border-header"></div>
+                    <h2>
+                        subheader
+                    </h2>
+                </div>
+                <div class="networks">
+                    <a href="https://www.facebook.com">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://instagram.com">
+                        <i class="fa-brands fa-instagram-square"></i>
+                    </a>
+                    <a href="https://github.com">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <div class="border-line-header"></div>
+            </nav>
+        </header>
+        <div class="login-page">
+            <form class="login-form" action="">
+                <a class="home" href="index.html">Home</a>
+                <h2>Sign In</h2>
+                <input class="input-login" id="email" placeholder="Email" maxlength="50">
+                <p id="email-error-msg">Incorrect email</p>
+                <input type="password" class="input-login" id="password" placeholder="Password">
+                <p id="password-error-msg">Incorrect password (must be longer than 7 characters and contain letters and numbers)</p>
+                <div class="login-remember-me">
+                    <input type="checkbox">
+                    <p>Remember me</p>
+                </div>
+                <a href="">Forgot password?</a>
+                <button type="button" id="continue-button">Continue</button>
+            </form>
+        </div>
+        <div class="login-validation-container">
+            <div id="login-validation">
+                <h3>Login Result</h3>
+                <p class="login-validation-result"></p>
+                <p class="login-validation-result"></p>
+            </div>
+        </div>
+        <script src="../javascript/login.js"></script>
+    </body>
+</html>
