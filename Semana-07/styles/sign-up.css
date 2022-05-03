@@ -38,13 +38,24 @@ form h2 {
 }
 
 input {
-    width: 70%;
-    margin: 10px 0;
+    width: 50%;
 }
 
 input[type="submit"] {
-    width: 80%;
-    margin: 10px auto;
+    margin: 6px auto;
+    padding: 10px 131px;
+    background-color: #F56A6A;
+    font-size: 17px;
+    color: #fff;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input:hover[type="submit"] {
+    opacity: 80%;
 }
 
 .ul-link2 {
@@ -110,8 +121,14 @@ input[type="submit"] {
     }
 
     .form-inputs input {
-        width: 80%;
-        margin: 10px;
+        padding: 10px 12px;
+        width: 73%;
+        margin: 20px auto 20px 58px;
+        background-color: transparent;
+        border: 1px solid #373867;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 4px;
     }
 
     #signup-validation {

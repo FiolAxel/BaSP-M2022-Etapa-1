@@ -73,14 +73,14 @@ lastnameInputSignup.addEventListener('focus', function() {
 dniInputSignup.addEventListener('blur', validateDNI)
 
 function validateDNI() {
-    if (dniInputSignup.value.length < 8) {
-        signupErrors[2].style.display = 'inherit';
-        signupErrors[2].textContent = '* must contain more than 7 numbers';
-        dniInputSignup.style.border = '2px solid red';
-        return true
+    if (dniInputSignup.value.length == 7 || dniInputSignup.value.length == 8) {
+        dniInputSignup.style.border = '2px solid green';
     }
     else {
-        dniInputSignup.style.border = '2px solid green';
+        signupErrors[2].style.display = 'inherit';
+        signupErrors[2].textContent = '* must be 7 or 8 numbers long';
+        dniInputSignup.style.border = '2px solid red';
+        return true;
     }
 }
 
@@ -327,7 +327,6 @@ function validation1(strings) {
     return false
 }
 
-
 validationBoxS = document.getElementById('signup-validation');
 submitInputSignup.addEventListener('click', showResultsSignup);
 
@@ -448,7 +447,7 @@ function showResultsSignup() {
         validationResultsSignup[10].textContent = `Password validation: OK`;
         validationResultsSignup[10].style.color = 'green';
     }
-    // console.log(fetch(`${signupUrl}?email=${emailInputSignup.value}&password=${passwordInputSignup.value}&lastName=${lastnameInputSignup.value}&name=${nameInputSignup.value}&dni=${dniInputSignup.value}&dob=${dateInputSignup.value}&phone=${telInputSignup.value}&address=${addressInputSignup.value}&city=${locationInputSignup.value}&zip=${postalCodeInputSignup.value}`));
+
     if (doFetch) {
         var date = new Date(dateInputSignup.value);
         var month = (1 + date.getMonth()).toString().padStart(2, '0');
@@ -457,12 +456,35 @@ function showResultsSignup() {
         fetch(`${signupUrl}?email=${emailInputSignup.value}&password=${passwordInputSignup.value}&lastName=${lastnameInputSignup.value}&name=${nameInputSignup.value}&dni=${dniInputSignup.value}&dob=${formattedDate}&phone=${telInputSignup.value}&address=${addressInputSignup.value}&city=${locationInputSignup.value}&zip=${postalCodeInputSignup.value}`)
             .then(res => res.json())
             .then(signupStatus => {
-                console.log(signupStatus);
+                if (signupStatus.success) {
+                    localStorage.setItem('name', signupStatus.data.name);
+                    localStorage.setItem('lastName', signupStatus.data.lastName);
+                    localStorage.setItem('dni', signupStatus.data.dni);
+                    localStorage.setItem('dob', signupStatus.data.dob);
+                    localStorage.setItem('phone', signupStatus.data.phone);
+                    localStorage.setItem('address', signupStatus.data.address);
+                    localStorage.setItem('city', signupStatus.data.city);
+                    localStorage.setItem('zip', signupStatus.data.zip);
+                    localStorage.setItem('email', signupStatus.data.email);
+                    localStorage.setItem('password', signupStatus.data.password);
+                    localStorage.setItem('repeatPassword', signupStatus.data.password);
+                }
             })
-            // .then(res => res.json())
-            // .then(signupStatus => {
-            //     alert( 'Success: ' + signupStatus.success + '. \nMessage: ' + signupStatus.msg);
-            // })
-            // .catch(e => console.log(e));
     }
 }
+
+const load = () => {
+    if (localStorage.getItem('name')) {
+        nameInputSignup.value = localStorage.getItem('name');
+    }
+    if (localStorage.getItem('lastName')) {
+        lastnameInputSignup.value = localStorage.getItem('lastName');
+    }
+    if (localStorage.getItem('dni')) {
+        dniInputSignup.value = localStorage.getItem('dni');
+    }
+    if (localStorage.getItem('dob')) {
+        dateInputSignup.value = localStorage.getItem('dob');
+    }
+  }
+  window.onload = load;
