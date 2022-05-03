@@ -24,7 +24,7 @@ The page is located at https://fiolaxel.github.io/BaSP-M2022-Etapa-1/Semana-06/v
 
 This week we will work on extending the forms from the previous week so that pressing the confirmation buttons sends the data loaded in them to a web server via an HTTP request from JavaScript.
 
-The page is located at https://fiolaxel.github.io/BaSP-M2022-Etapa-1/Semana-07/index.html/
+The page is located at https://fiolaxel.github.io/BaSP-M2022-Etapa-1/Semana-07/views
 
 ```
 Made by Axel Fiol
