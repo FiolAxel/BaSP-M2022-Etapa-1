@@ -16,7 +16,23 @@ var signupUrl = 'https://basp-m2022-api-rest-server.herokuapp.com/signup';
 
 nameInputSignup.addEventListener('blur', validateName);
 
+function charIsLetter(char) {
+    if (typeof char !== 'string') {
+      return false;
+    }
+  
+    return char.toLowerCase() !== char.toUpperCase();
+}
+
 function validateName() {
+    for (i = 0; i < nameInputSignup.value.length ; i++) {
+        if (!charIsLetter(nameInputSignup.value[i])) {
+            signupErrors[0].style.display = 'inherit';
+            signupErrors[0].textContent = '* must contain ONLY letters';
+            nameInputSignup.style.border = '2px solid red';
+            return true;
+        }
+    }
     if (nameInputSignup.value.length < 3) {
         signupErrors[0].style.display = 'inherit';
         signupErrors[0].textContent = '* must contain at least 3 caracters';
@@ -45,6 +61,14 @@ nameInputSignup.addEventListener('focus', function() {
 lastnameInputSignup.addEventListener('blur', validateLastname);
 
 function validateLastname() {
+    for (i = 0; i < lastnameInputSignup.value.length ; i++) {
+        if (!charIsLetter(lastnameInputSignup.value[i])) {
+            signupErrors[1].style.display = 'inherit';
+            signupErrors[1].textContent = '* must contain ONLY letters';
+            lastnameInputSignup.style.border = '2px solid red';
+            return true;
+        }
+    }
     if (lastnameInputSignup.value.length < 3) {
         signupErrors[1].style.display = 'inherit';
         signupErrors[1].textContent = '* must contain at least 3 caracters';
@@ -77,6 +101,12 @@ function validateDNI() {
         dniInputSignup.style.border = '2px solid green';
     }
     else {
+        signupErrors[2].style.display = 'inherit';
+        signupErrors[2].textContent = '* must be 7 or 8 numbers long';
+        dniInputSignup.style.border = '2px solid red';
+        return true;
+    }
+    if (isNaN(dniInputSignup.value)) {
         signupErrors[2].style.display = 'inherit';
         signupErrors[2].textContent = '* must be 7 or 8 numbers long';
         dniInputSignup.style.border = '2px solid red';
@@ -170,6 +200,14 @@ addressInputSignup.addEventListener('focus', function() {
 locationInputSignup.addEventListener('blur', validateLocation);
 
 function validateLocation() {
+    for (i = 0; i < locationInputSignup.value.length ; i++) {
+        if (!charIsLetter(locationInputSignup.value[i])) {
+            signupErrors[6].style.display = 'inherit';
+            signupErrors[6].textContent = '* must contain ONLY letters';
+            locationInputSignup.style.border = '2px solid red';
+            return true;
+        }
+    }
     if (locationInputSignup.value.length < 4) {
         signupErrors[6].style.display = 'inherit';
         signupErrors[6].textContent = '* must contain more than 3 caracters';
@@ -205,7 +243,7 @@ postalCodeInputSignup.addEventListener('focus', function() {
 
 emailInputSignup.addEventListener('blur', validateEmail);
 
-var emailRegex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
+var emailRegex = /[a-z0-9]+@[a-z]+.[a-z]{2,3}/;
 
 function validateEmail() {
     if (!emailRegex.test(emailInputSignup.value)) {
@@ -468,6 +506,8 @@ function showResultsSignup() {
                     localStorage.setItem('email', signupStatus.data.email);
                     localStorage.setItem('password', signupStatus.data.password);
                     localStorage.setItem('repeatPassword', signupStatus.data.password);
+                    document.getElementById('signup-form').reset();
+                    alert( 'Success: ' + signupStatus.success + '. \nMessage: ' + signupStatus.msg);
                 }
             })
     }
@@ -484,7 +524,29 @@ const load = () => {
         dniInputSignup.value = localStorage.getItem('dni');
     }
     if (localStorage.getItem('dob')) {
-        dateInputSignup.value = localStorage.getItem('dob');
+        var date = new Date(localStorage.getItem('dob'));
+        var month = (1 + date.getMonth()).toString().padStart(2, '0');
+        var day = date.getDate().toString().padStart(2, '0');
+        formattedDate = date.getFullYear() + '-' + month + '-' + day;
+        dateInputSignup.value = formattedDate; 
+    }
+    if (localStorage.getItem('phone')) {
+        telInputSignup.value = localStorage.getItem('phone');
+    }
+    if (localStorage.getItem('address')) {
+        addressInputSignup.value = localStorage.getItem('address');
+    }
+    if (localStorage.getItem('city')) {
+        locationInputSignup.value = localStorage.getItem('city');
+    }
+    if (localStorage.getItem('zip')) {
+        postalCodeInputSignup.value = localStorage.getItem('zip');
+    }
+    if (localStorage.getItem('email')) {
+        emailInputSignup.value = localStorage.getItem('email');
+    }
+    if (localStorage.getItem('password')) {
+        passwordInputSignup.value = localStorage.getItem('password');
     }
   }
   window.onload = load;

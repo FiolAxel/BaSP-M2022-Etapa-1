@@ -12,10 +12,14 @@ function charIsLetter(char) {
     return char.toLowerCase() !== char.toUpperCase();
 }
 
+var emailRegex = /[a-z0-9]+@[a-z]+.[a-z]{2,3}/;
+
 function validateEmail(email) {
-    return email.match(
-      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    );
+    if (!emailRegex.test(email)) {
+        return false;
+    }
+    return true;
+
 };
 
 function validatePassword(password) {
@@ -46,7 +50,7 @@ function validatePassword(password) {
 inputEmail.addEventListener('blur', function() {
     valorEmail = document.getElementById('email').value;
 
-    if (validateEmail(valorEmail) === null){
+    if (!validateEmail(valorEmail)){
         document.getElementById('email-error-msg').style.display = 'block';
         inputEmail.style.backgroundColor = '#ffbdbd';
         inputEmail.style.border = '1px solid red';
